@@ -1,6 +1,6 @@
 {
     "id": "sentiment-analysis",
-    "version": "1.4.0",
+    "version": "1.4.1",
     "meta": {
         "label": "Sentiment Analysis",
         "category": "Natural Language Processing",
