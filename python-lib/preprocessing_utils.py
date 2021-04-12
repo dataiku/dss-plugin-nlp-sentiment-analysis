@@ -47,7 +47,7 @@ def clean_text(text):
     split = u" "  # character that will be used to split the texts later
 
     if isinstance(text, six.text_type):
-        translate_map = dict((ord(c), six.u(split)) for c in filters)
+        translate_map = dict((ord(c), split) for c in filters)
         text = text.translate(translate_map)
     elif len(split) == 1:
         translate_map = (
