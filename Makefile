@@ -29,7 +29,7 @@ unit-tests:
 	@PYTHON_VERSION_IS_CORRECT=`cat code-env/python/desc.json | python -c "import sys, json; print(str($$PYTHON_VERSION) in [x[-2:] for x in json.load(sys.stdin)['acceptedPythonInterpreters']]);"`
 	@if [ $$PYTHON_VERSION_IS_CORRECT == "False" ]; then echo "Python version $$PYTHON_VERSION is not in acceptedPythonInterpreters"; exit 1; else echo "Python version $$PYTHON_VERSION is in acceptedPythonInterpreters"; fi
 	@rm -rf ./env/
-	@python -m venv env/
+	@if [ $$PYTHON_VERSION == "27" ]; then python -m virtualenv env/; else python -m venv env/; fi
 	@source env/bin/activate
 	@pip install --upgrade pip
 	@pip install --no-cache-dir -r tests/python/unit/requirements.txt
