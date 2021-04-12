@@ -3,6 +3,7 @@
 import logging
 import os
 
+import six
 import numpy as np
 from fasttext import load_model
 
@@ -32,7 +33,7 @@ output_dataset = dataiku.Dataset(dataset_name)
 recipe_config = get_recipe_config()
 text_column_name = recipe_config.get("text_column_name", None)
 if not text_column_name:
-    raise ValueError("You did not choose a text column.")
+    raise ValueError("Please choose a text column")
 sentiment_scale = recipe_config.get("sentiment_scale")
 output_score = recipe_config.get("output_score", False)
 output_sentiment = recipe_config.get("output_sentiment", True)
@@ -69,7 +70,11 @@ with output_dataset.get_writer() as writer:
     for chunk_idx, df in enumerate(input_dataset.iter_dataframes(chunksize=CHUNK_SIZE)):
 
         # TODO output the initial text, not the clean ones
-        texts = df[text_column_name].apply(lambda s: clean_text(str(s)).decode("utf-8")).values
+        texts = (
+            df[text_column_name]
+            .apply(lambda s: clean_text(str(s)).decode("utf-8") if six.PY2 else clean_text(str(s)))
+            .values
+        )
         predicted_scores, confidence_list = model.predict(list(texts))
 
         # Post-process predicted Sentiment
