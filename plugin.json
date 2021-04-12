@@ -1,11 +1,11 @@
 {
     "id": "sentiment-analysis",
-    "version": "1.4.1",
+    "version": "1.5.0",
     "meta": {
         "label": "Sentiment Analysis",
         "category": "Natural Language Processing",
-        "description": "Estimate the sentiment polarity (positive/negative) of a text",
-        "author": "Dataiku (Alex COMBESSIE and Hicham EL BOUKKOURI)",
+        "description": "Estimate the sentiment polarity (positive/negative) of text data",
+        "author": "Dataiku (Alex COMBESSIE, Hicham EL BOUKKOURI)",
         "icon": "icon-heart",
         "licenseInfo": "Apache Software License",
         "url": "https://www.dataiku.com/product/plugins/sentiment-analysis/",
