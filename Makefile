@@ -43,7 +43,7 @@ integration-tests:
 	@set -e
 	@echo "Running integration tests..."
 	@rm -rf ./env/
-	@python -m venv env/
+	@python3 -m venv env/
 	@source env/bin/activate
 	@pip install --upgrade pip
 	@pip install --no-cache-dir -r tests/python/integration/requirements.txt
