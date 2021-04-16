@@ -27,12 +27,22 @@
     ],
     "params": [
         {
+            "name": "separator_input",
+            "label": "Input parameters",
+            "type": "SEPARATOR"
+        },
+        {
             "name": "text_column_name",
             "label": "Text column",
             "type": "COLUMN",
             "description": "",
             "mandatory": true,
             "columnRole": "input_dataset"
+        },
+        {
+            "name": "separator_modeling",
+            "label": "Modeling parameters",
+            "type": "SEPARATOR"
         },
         {
             "name": "sentiment_scale",
