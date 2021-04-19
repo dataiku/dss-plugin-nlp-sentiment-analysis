@@ -1,14 +1,15 @@
 {
-    "id": "sentiment-analysis",
-    "version": "1.5.0",
-    "meta": {
-        "label": "Sentiment Analysis",
-        "category": "Natural Language Processing",
-        "description": "Estimate the sentiment polarity (positive/negative) of English text data",
-        "author": "Dataiku (Alex COMBESSIE, Hicham EL BOUKKOURI)",
-        "icon": "icon-heart",
-        "licenseInfo": "Apache Software License",
-        "url": "https://www.dataiku.com/product/plugins/sentiment-analysis/",
-        "tags": ["NLP", "Machine Learning"]
-    }
+	"id": "sentiment-analysis",
+	"version": "1.5.0",
+	"meta": {
+		"label": "Sentiment Analysis",
+		"category": "Natural Language Processing",
+		"description": "Estimate the sentiment polarity (positive/negative) of text data in English",
+		"author": "Dataiku (Alex COMBESSIE, Hicham EL BOUKKOURI)",
+		"icon": "icon-heart",
+		"licenseInfo": "BSD 3-Clause License",
+		"supportLevel": "NOT_SUPPORTED",
+		"url": "https://www.dataiku.com/product/plugins/sentiment-analysis/",
+		"tags": ["NLP", "Machine Learning"]
+	}
 }
