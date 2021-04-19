@@ -8,8 +8,8 @@
     "inputRoles": [
         {
             "name": "input_dataset",
-            "label": "Input dataset",
-            "description": "The dataset that contains the column of interest",
+            "label": "Text dataset",
+            "description": "Dataset with a text column",
             "arity": "UNARY",
             "required": true,
             "acceptsDataset": true
@@ -19,7 +19,7 @@
         {
             "name": "output_dataset",
             "label": "Output dataset",
-            "description": "A copy of the input dataset with an additional column of predicted sentiment polarities",
+            "description": "Copy of the input dataset with additional columns on predicted sentiment polarity",
             "arity": "UNARY",
             "required": true,
             "acceptsDataset": true
