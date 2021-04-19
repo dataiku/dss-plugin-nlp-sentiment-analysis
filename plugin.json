@@ -4,7 +4,7 @@
     "meta": {
         "label": "Sentiment Analysis",
         "category": "Natural Language Processing",
-        "description": "Estimate the sentiment polarity (positive/negative) of text data",
+        "description": "Estimate the sentiment polarity (positive/negative) of English text data",
         "author": "Dataiku (Alex COMBESSIE, Hicham EL BOUKKOURI)",
         "icon": "icon-heart",
         "licenseInfo": "Apache Software License",
