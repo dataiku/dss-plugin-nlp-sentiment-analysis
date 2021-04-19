@@ -13,7 +13,7 @@ This plugin is distributed under the [BSD 3-Clause](LICENSE).
 The English model bundled with this plugin comes from fastText, which is under [MIT License](https://github.com/facebookresearch/fastText/blob/master/LICENSE).
 
 
-### References
+## References
 
 - P. Bojanowski, E. Grave, A. Joulin, T. Mikolov, [*Enriching Word Vectors with Subword Information*](https://arxiv.org/abs/1607.04606)
 
