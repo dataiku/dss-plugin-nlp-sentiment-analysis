@@ -1,7 +1,7 @@
 {
     "meta": {
         "label": "Sentiment analysis",
-        "description": "Estimate the sentiment polarity (positive/negative) of a text"
+        "description": "Estimate the sentiment polarity (positive/negative) of text data in English"
     },
     "kind": "PYTHON",
     "selectableFromDataset": "input_dataset",
