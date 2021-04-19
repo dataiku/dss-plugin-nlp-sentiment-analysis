@@ -1,20 +1,16 @@
 # Sentiment Analysis Plugin
 
-This plugin provides a tool for performing Sentiment Analysis on textual data.
+![Build status](https://github.com/dataiku/dss-plugin-nlp-sentiment-analysis/actions/workflows/auto-make.yml/badge.svg) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/dataiku/dss-plugin-nlp-sentiment-analysis?logo=github) ![Support level](https://img.shields.io/badge/support-Unsupported-orange)
 
-The plugin comes with a single recipe that allows you to estimate the sentiment polarity (positive/negative) of a text based on it content. For instance, you could use this recipe on a dataset of user reviews or social media data (such as tweets) to know which instances are positive (category 1) and which are negative (category 0).
+This Dataiku DSS plugin provides a recipe to estimate the sentiment polarity (positive/negative) of text data in English.
 
-## Recipes
-### Compute sentiment scores
+Documentation: https://www.dataiku.com/product/plugins/sentiment-analysis/
 
-Classifies your texts into two categories : 1 when the sentiment is positive (e.g. "This movie is good") and 0 otherwise.
 
-**How to use the recipe**  
-Using the recipe is very straightforward. Just plug in your dataset, select the column containing the texts you are interested in scoring and run the recipe!
+## License
 
-[Option] You can tick the “Output confidence scores” box to output the model's confidence for each prediction.
-
-[Option] You can un-tick the “Predict polarity” box to produce sentiment scores that vary from 1 (highly negative) to 5 (highly positive).
+This plugin is distributed under the [BSD 3-Clause](LICENSE).
+The English model bundled with this plugin comes from fastText, which is under [MIT License](https://github.com/facebookresearch/fastText/blob/master/LICENSE).
 
 
 ### References
@@ -24,8 +20,3 @@ Using the recipe is very straightforward. Just plug in your dataset, select the 
 - A. Joulin, E. Grave, P. Bojanowski, T. Mikolov, [*Bag of Tricks for Efficient Text Classification*](https://arxiv.org/abs/1607.01759)
 
 - A. Joulin, E. Grave, P. Bojanowski, M. Douze, H. Jégou, T. Mikolov, [*FastText.zip: Compressing text classification models*](https://arxiv.org/abs/1612.03651)
-
-This plugin uses the text classification library [fastText](https://fasttext.cc/). If you are interested in learning more about how fastText can be used for text classification, you can refer to [the following tutorial](fasttext_tutorial/fastText.ipynb).
-
-### Licenses
-The English model bundled with this plugin comes from fastText, which is is [*BSD-licensed*](https://github.com/facebookresearch/fastText/blob/master/LICENSE).
