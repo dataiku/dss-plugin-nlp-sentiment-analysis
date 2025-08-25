@@ -112,8 +112,9 @@ with output_dataset.get_writer() as writer:
                     else ""
                     for p in predicted_scores
                 ]
-        if output_probabilities:
-            df[new_cols[2]] = np.array(confidence_list) / float(max(confidence_list))
+        if output_probabilities: 
+            # df[new_cols[2]] = np.array(confidence_list) / float(max(confidence_list)) 
+            df[new_cols[2]] = np.array(confidence_list) / float(1.0000)
 
         # Append dataframe to output Dataset
         if chunk_idx == 0:
