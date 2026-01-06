@@ -3,13 +3,13 @@
 	"version": "1.6.1",
 	"meta": {
 		"label": "Sentiment Analysis",
-		"category": "Natural Language Processing",
+		"category": "NLP",
 		"description": "Estimate the sentiment polarity of text data. ⚠️ Dataiku strongly recommends to rather use the native [Generative AI](https://doc.dataiku.com/dss/latest/generative-ai/index.html) features, which mostly supersede this plugin.",
 		"author": "Dataiku (Alex COMBESSIE, Hicham EL BOUKKOURI)",
 		"icon": "icon-heart",
 		"licenseInfo": "BSD 3-Clause License",
 		"supportLevel": "NOT_SUPPORTED",
 		"url": "https://www.dataiku.com/product/plugins/sentiment-analysis/",
-		"tags": ["NLP", "Machine Learning"]
+		"tags": ["NLP"]
 	}
 }
