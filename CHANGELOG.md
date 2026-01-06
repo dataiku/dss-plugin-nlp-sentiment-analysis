@@ -1,6 +1,6 @@
 # Changelog
 
-## [Version 1.6.1](https://github.com/dataiku/dss-plugin-nlp-embedding/releases/tag/v1.6.1) - 2025-12
+## [Version 1.6.1](https://github.com/dataiku/dss-plugin-nlp-sentiment-analysis/releases/tag/v1.6.1) - 2025-12
 
 - Updated warning
 
