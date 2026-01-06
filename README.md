@@ -1,6 +1,6 @@
 # Sentiment Analysis Plugin
 
-⚠️ This plugin is now "deprecated", we recommend using the [Generative AI](https://doc.dataiku.com/dss/latest/generative-ai/index.html) feature.
+⚠️️ Dataiku strongly recommends to rather use the native [Generative AI](https://doc.dataiku.com/dss/latest/generative-ai/index.html) features, which mostly supersede this plugin.
 
 ![Build status](https://github.com/dataiku/dss-plugin-nlp-sentiment-analysis/actions/workflows/auto-make.yml/badge.svg) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/dataiku/dss-plugin-nlp-sentiment-analysis?logo=github) ![Support level](https://img.shields.io/badge/support-Unsupported-orange)
 
